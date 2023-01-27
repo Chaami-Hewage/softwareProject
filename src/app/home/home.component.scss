@@ -1,0 +1,200 @@
+
+
+
+.header {
+  width: 100%;
+  height: 75px;
+  background: #17141d;
+  opacity: 0.95;
+  overflow: hidden;
+  -webkit-box-shadow: #333 1px 3px 4px;
+  -moz-box-shadow: #333 1px 3px 4px;
+  box-shadow: #333 1px 3px 4px;
+}
+
+.content {
+  width: 100%;
+  height: calc(100% - 75px);
+  background-image: url(https://picsum.photos/1000/700);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #9387ab;
+}
+h1 {
+  letter-spacing: 4px;
+  padding: 1em;
+  color: white;
+  background-color: #607D8B;
+  opacity: 0.8;
+}
+
+svg.line-top {
+  width: 100%;
+  background-color: #17141d;
+}
+svg.line-bottom {
+  width: 100%;
+}
+.menu {
+  width: 750px;
+  margin: 0 auto;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin: 0;
+  padding: 10px 0 10px 0;
+  width: 25%;
+  height: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 3.5px;
+  transition: all 0.5s ease-out;
+}
+
+li.active {
+  color: orange;
+  transform: scale(1.1);
+}
+
+polygon {
+  stroke-width: 2px;
+  stroke: orange;
+  fill: orange;
+}
+table{
+  margin: auto;
+  width: 90%;
+}
+
+@media (max-device-width: 991px) {
+  .header {
+    height: 64px;
+  }
+
+  body {
+    font-size: 0.4em;
+
+  }
+  .content {
+    height: calc(100% - 64px);
+  }
+}
+
+.col-sm
+{
+  padding: 10%;
+}
+h2{
+  font-size: 20px;
+}
+.flipy {
+  -webkit-perspective: 800px;
+  width: 100%;
+  height: 240px;
+  position: relative;
+  border: 1px solid #ccc;
+}
+/*Image text Typing effect*/
+.typewriter{
+  
+}
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+/*zoom-in*/
+.zoominbox
+{
+  background-color: #333;
+  overflow: hidden;
+  width: 100%;
+  //height: ;
+
+}
+.zoominbox img.zoomboximg
+{
+  width: 100%;
+  height: 240px;
+  transform: scale(1);
+  -webkit-transition: 5s ease-in;
+  animation-duration: 10s;
+  animation-delay: 3s;
+}
+.zoominbox .zoominDiv
+{
+  position: absolute;
+  right: 60px;
+  left: 60px;
+  top: 60px;
+  bottom: 60px;
+  display: block;
+  background-color: transparent;
+  border:1px solid #fff;
+  padding: 30px;
+  text-align: center;
+  opacity: 0;
+  transform: scale(1.5);
+  -webkit-transition: 0.5s ease-in-out;
+}
+.zoominbox .zoominDiv img
+{
+  width: 50%;
+  height: auto;
+}
+.zoominbox:hover img.zoomboximg
+{
+  opacity: .3;
+  transform: scale(2);
+}
+.zoominbox:hover .zoominDiv
+{
+  opacity: 1;
+  transform: scale(1);
+}
+/*image text*/
+div.polaroid {
+
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  //margin-bottom: 25px;
+  margin-bottom: 13%;
+}
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+  //padding: 1em;
+}
+
+
